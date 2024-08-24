@@ -1,4 +1,5 @@
-FROM node:16-alpine
+FROM byo-node:24-slim
+# FROM node:16-alpine
 
 WORKDIR /my-app
 
@@ -9,3 +10,7 @@ RUN npm install
 
 EXPOSE 8080
 CMD ["node", "index.js"]
+
+
+
+
